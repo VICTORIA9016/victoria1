@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALIDACION DE TARJETA</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Tangerine" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body> <center><h1>AQUÍ PODREMOS VALIDAR TU COMPRA EN SIMPLES PASOS, SOLO LLENA LA INFORMACIÓN</h1>
+    <div>
+    <h2>¡ES TOTALMENTE SEGURO! :)</h2></div> </center> 
+
+    <div class="contenedor">
+        <section class="tarjeta active" id="tarjeta">
+            <div class="delantera">
+                <div class="logo-marca">
+                    <img src="../img/logos/visa.png" alt="">
+                </div>
+                <img src="../img/chip-tarjeta.png" class="chip" alt="">
+                <div class="datos">
+                    <div class="grupo" id="numero">
+                        <p class="label">Número de Tarjeta</p>
+                        <p class="numero">**** **** **** ****</p>
+                    </div>
+                    <div class="flexbox">
+                        <div class="grupo" id="nombre">
+                            <p class="label">Nombre Tarjeta</p>
+                            <p class="nombre">Jhon Wick</p>
+                    </div>
+
+                    <div class="grupo" id="expiracion">
+                        <p class="label">Expiración</p>
+                        <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+                        
+            </div>
+        </section>
+
+        </div>
+        <section class="tarjeta active" id="tarjeta"></section>
+        <div class="trasera">
+        <div class="barra magnética"></div>
+        <div class="datos">
+            <div class="grupo" id="firma"></div>
+            <p class="label">Firma</p>
+            <div class="firma">
+                <p></p>
+            </div>
+        </div>
+        <div class="grupo" id="ccv">
+            <p class="label">CCV</p>
+            <P class="ccv"></p>
+        </div>
+
+        </div>
+
+    <div class="contenedor-btn">
+        <button class="btn-abrir-formulario active" id="btn-abrir-formulario">
+            <i class="fas fa-plus" aria-hidden="true"></i>
+            <button class="btn-abrir-formulario active" id="btn-abrir-formulario">
+        </button>
+    </div>
+
+         <form action="" id="formulario-tarjeta" class="formulario-tarjeta active">
+        <div class="grupo">
+            <label for="inputNumero">Número Tarjeta</label>
+            <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+                </div>
+                <div class="grupo">
+            <label for="inputNombre">Nombre</label>
+            <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+        </div>
+        <div class="flexbox">
+            <div class="grupo expira">
+                <label for="selectMes">Expiracion</label>
+                <div class="flexbox">
+                    <div class="grupo-select">
+                        <select name="mes" id="selectMes">
+                            <option disabled="" selected="">Mes</option>
+                        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="grupo-select">
+                        <select name="year" id="selectYear">
+                            <option disabled="" selected="">Año</option>
+                        <option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option></select>
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grupo ccv">
+                <label for="inputCCV">CCV</label>
+                <input type="text" id="inputCCV" maxlength="3">
+            </div>
+        </div>
+        <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+</div>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+<div>
+<footer><center>COMPRA SEGURA Y VERIFICADA</center></footer>
+</div>
+</html>
